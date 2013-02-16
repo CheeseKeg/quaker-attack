@@ -1,17 +1,7 @@
 html { height: 100%; }
-h1,h2,h3 { padding: 0px; margin: 20px 0px 0px 0px; font: 30px terminal; letter-spacing: 2px; text-align: left; }
-h1 { color: #FF2FE7; font-size: 30px; }
-h2 { color: #45D4FF; font-size: 25px; }
-h3 { color: #45D4FF; font-size: 25px; }
 
-canvas { border: 1px solid; background: white; margin-top: 50px; display: block; }
-#canvas { margin: auto; width: 800px; height: 600px; margin-top: 50px; border: black 1px solid; overflow: hidden; background: white; }
-
-#info { width: 500px; line-height: 130%; padding-top: 20px; }
-#jaws-log { font: 11px verdana; color: #aaaaaa; background: black; width: 800px; padding: 5px; }
-#jaws-edit { font: 11px verdana; color: #aaaaaa; background: black; width: 800px; padding: 10px; margin-top: 10px; min-height: 50px; display: none; overflow: auto; }
-
-code { font-weight: bold; font-size: 15px; color: #33FF33;}
+canvas { border: 1px solid; background: white; margin-top: 24px; display: block; }
+#canvas { margin: auto; width: 800px; height: 600px; margin-top: 24px; border: black 1px solid; overflow: hidden; background: white; }
 
 body {
   font: 13px verdana;
@@ -27,15 +17,3 @@ a:link {color: #77ccff; text-decoration: underline; }
 a:active {color: #ff0000; text-decoration: underline; }
 a:visited {color: #dd77ff; text-decoration: underline; }
 a:hover {color: #ffffff; text-decoration: none; }
-
-/*
- * We want non-blurry, block retro gfx when scaling! Webkit (chrome/safari) has yet to catch up with this 
- * Also this actually doesn't seem to affect the <canvas>-tag just yet.
- */
-html, canvas, img {
-  image-rendering: optimizeSpeed;
-  image-rendering: optimize-contrast;
-  image-rendering: -moz-crisp-edges; /* FF */
-  image-rendering: -webkit-optimize-contrast; /* Webkit */
-  -ms-interpolation-mode: nearest-neighbor;   /* IE */
-}

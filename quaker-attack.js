@@ -59,16 +59,6 @@ function QuakerGame() {
 		player.health = 100
 		player.energy = 100
 		player.bombs = 3
-		
-		//var anim = new jaws.Animation({sprite_sheet: "quaker.png", frame_size: [64,64], frame_duration: 100})
-		//player.anim_default = anim.slice(0,0)
-		//player.anim_fire = anim.slice(1,1)
-		//player.anim_down = anim.slice(8,10)
-		//player.anim_left = anim.slice(10,12)
-		//player.anim_right = anim.slice(12,14)
-
-		//player.setImage( player.anim_default.next() )
-		//jaws.preventDefaultKeys(["up", "down", "left", "right", "space"])
 	}
 
 	// update() will get called each game tick with your specified FPS. Put game logic here.
@@ -103,8 +93,6 @@ function QuakerGame() {
 		player.energy_bar.inside.resizeTo(player.energy, 10)
 		viewport.draw(player.health_bar.inside)
 		viewport.draw(player.energy_bar.inside)
-		//viewport.draw(new jaws.Rect(width - 110, 10, 102, 12))
-		//viewport.draw(new jaws.Rect(width - 110, 10, 102, 12))
 	}
 }
 
