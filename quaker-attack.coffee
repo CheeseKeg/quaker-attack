@@ -1,3 +1,4 @@
+
 class QuakerGame
 	setup: ->
 		@fps = document.getElementById("fps")
