@@ -1,4 +1,4 @@
-friend-zone; reject all of the "nice guys."
+quaker-attack; the best game ever
 ===================================
 github.com/aderosier/quaker-attack
 
