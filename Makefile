@@ -11,7 +11,8 @@ js_dir = js/
 
 modules = \
 	$(src_dir)header.coffee \
-	$(src_dir)init.coffee
+	$(src_dir)init.coffee \
+	$(src_dir)QuakerGame.coffee
 
 output = $(js_dir)$(project_output).js
 
