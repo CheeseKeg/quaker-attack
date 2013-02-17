@@ -16,7 +16,7 @@ modules = \
 output = $(js_dir)$(project_output).js
 
 .PHONY : main
-main : clean $(output)
+main : $(output)
 
 .PHONY : help
 help :
