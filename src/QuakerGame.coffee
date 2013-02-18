@@ -3,12 +3,12 @@ class QuakerGame
                 @fps = document.getElementById("fps")
                 @viewport = new Viewport({max_x:800, max_y:600})
 
-                @background = new Sprite({image:"back.jpg", x:0, y:0, scale:1, anchor:"top_left"})
-                @player = new Sprite({image:"quaker.png", x:400, y:300, scale:1, anchor:"center"})
-                @player.hpbar = new Sprite({image:"bar.png", x:694, y:4, scale:1, anchor:"top_left"})
-                @player.epbar = new Sprite({image:"bar.png", x:694, y:18, scale:1, anchor:"top_left"})
-                @player.hpbar.in = new Sprite({image:"health.png", x:695, y:5, scale:1, anchor:"top_left"})
-                @player.epbar.in = new Sprite({image:"energy.png", x:695, y:19, scale:1, anchor:"top_left"})
+                @background = new Sprite({image:"assets/images/back.jpg", x:0, y:0, scale:1, anchor:"top_left"})
+                @player = new Sprite({image:"assets/images/quaker.png", x:400, y:300, scale:1, anchor:"center"})
+                @player.hpbar = new Sprite({image:"assets/images/bar.png", x:694, y:4, scale:1, anchor:"top_left"})
+                @player.epbar = new Sprite({image:"assets/images/bar.png", x:694, y:18, scale:1, anchor:"top_left"})
+                @player.hpbar.in = new Sprite({image:"assets/images/health.png", x:695, y:5, scale:1, anchor:"top_left"})
+                @player.epbar.in = new Sprite({image:"assets/images/energy.png", x:695, y:19, scale:1, anchor:"top_left"})
                 @player.hp = 100
                 @player.ep = 100
                 @player.bombs = 3

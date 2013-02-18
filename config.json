@@ -1,0 +1,11 @@
+{
+    "asset_root": "assets/",
+    "assets": {
+	"image_root": "images/",
+	"images": [
+	    "quaker.png", "quaker-fire.png",
+	    "back.jpg",
+	    "bar.png", "energy.png", "health.png"
+	]
+    }
+}
