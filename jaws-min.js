@@ -1,22 +1,30 @@
-/*
- *  @source http://github.com/ippa/jaws/blob/master/jaws.js
+/**
  *
- *  @licstart
+ * @source: http://github.com/ippa/jaws/blob/master/jaws.js
  *
- *  This program is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU Lesser General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
+ * @licstart  The following is the entire license notice for the 
+ *  JavaScript code in this page.
  *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU Lesser General Public License for more details.
+ * Copyright (C) 2011  "ippa"
  *
- *  You should have received a copy of the GNU Lesser General Public License
- *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- *  @licend
+ * The JavaScript code in this page is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU Lesser
+ * General Public License (GNU LGPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU LGPL for more details.
+ *
+ * As additional permission under GNU LGPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU LGPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in this page.
+ *
  */
 var jaws=function(c){function b(b){c.mouse_x=b.pageX||b.clientX;c.mouse_y=b.pageY||b.clientY;b=c.canvas?c.canvas:c.dom;c.mouse_x-=b.offsetLeft;c.mouse_y-=b.offsetTop}var d,e;c.title=function(b){return b?d.innerHTML=b:d.innerHTML};c.unpack=function(){"Sprite SpriteList Animation Viewport SpriteSheet Parallax TileMap Rect pressed".split(" ").forEach(function(b){window[b]?c.log(b+"already exists in global namespace"):window[b]=c[b]})};c.log=function(b,c){e&&(b+="<br />",e.innerHTML=c?e.innerHTML.toString()+
 b:b)};c.init=function(f){d=document.getElementsByTagName("title")[0];c.url_parameters=c.getUrlParameters();e=document.getElementById("jaws-log");c.url_parameters.debug&&!e&&(e=document.createElement("div"),e.id="jaws-log",e.style.cssText="overflow: auto; color: #aaaaaa; width: 300px; height: 150px; margin: 40px auto 0px auto; padding: 5px; border: #444444 1px solid; clear: both; font: 10px verdana; text-align: left;",document.body.appendChild(e));c.canvas=document.getElementsByTagName("canvas")[0];
