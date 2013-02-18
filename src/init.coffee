@@ -11,7 +11,5 @@ loadAssets = ->
         for image in config.assets.images
                 images.push(config.asset_root + config.assets.image_root + image)
 
-        console.log images
-
         jaws.assets.add(images)
         jaws.start(QuakerGame)
