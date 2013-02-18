@@ -13,7 +13,8 @@ modules = \
 	$(src_dir)header.coffee \
 	$(src_dir)init.coffee \
 	$(src_dir)QuakerGame.coffee \
-	$(src_dir)Player.coffee
+	$(src_dir)Player.coffee \
+	$(src_dir)HUD.coffee
 
 output = $(js_dir)$(project_output).js
 
