@@ -24,6 +24,8 @@ class QuakerGame
                 @player.x = if @player.x < 60 then 60 else if @player.x > 740 then 740 else @player.x
                 @player.y = if @player.y < 50 then 50 else if @player.y > 400 then 400 else @player.y
                 @fps.innerHTML = jaws.game_loop.fps
+
+        draw: ->
                 @viewport.draw(@background)
                 @viewport.draw(@player)
                 # HUD
