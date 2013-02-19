@@ -1,3 +1,5 @@
+SIZE = {max_x: 800, max_y: 600}
+
 jaws.onload = ->
         jaws.unpack()
         jaws.assets.load("config.json",
